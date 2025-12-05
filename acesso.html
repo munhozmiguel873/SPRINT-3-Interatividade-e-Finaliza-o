@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acessar - MIGUEL Portal Notícias</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo">
+        <div class="logo-text">
+          <div class="brand">MIGUEL</div>
+          <div class="sub">PORTAL NOTÍCIAS</div>
+        </div>
+      </div>
+    </div>
+      <div class="topbar-center">
+        <form class="search" onsubmit="searchNews(event); return false;">
+          <input id="q" type="search" placeholder="O Que Procura" />
+          <button aria-label="Pesquisar">🔍</button>
+        </form>
+        <nav class="tags">
+          <a class="tag primary" href="index.html">Início</a>
+          <a class="tag" href="anime.html">Anime</a>
+          <a class="tag" href="jogos.html">Jogos</a>
+          <a class="tag" href="filmes.html">Filmes</a>
+        </nav>
+      </div>
+  </header>
+
+  <main class="container">
+    <section class="featured">
+      <article class="hero">
+        <div class="hero-text">
+          <h2>Página de Acesso (placeholder)</h2>
+          <p class="meta">Exemplo de formulário de login</p>
+          <p>Esta é uma página de exemplo. Você pode integrar seu sistema de autenticação aqui.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact-form">
+      <form action="#" method="post" onsubmit="alert('Login não funcional - placeholder.'); return false;">
+        <label for="user">Usuário / Email</label>
+        <input id="user" name="user" type="text" placeholder="Seu usuário" required />
+
+        <label for="pass">Senha</label>
+        <input id="pass" name="pass" type="password" placeholder="Senha" required />
+
+        <button class="readmore" type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div>© 2025 MIGUEL - Portal Notícias</div>
+    </footer>
+  </main>
+</body>
+</html>

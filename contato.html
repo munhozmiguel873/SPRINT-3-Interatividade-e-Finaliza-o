@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato - MIGUEL Portal Notícias</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-left">
+            <div class="logo">
+                <div class="logo-text">
+                    <div class="brand">MIGUEL</div>
+                    <div class="sub">PORTAL NOTÍCIAS</div>
+                </div>
+            </div>
+        </div>
+        <div class="topbar-center">
+            <nav class="tags">
+                <a class="tag" href="index.html">início</a>
+                <a class="tag" href="noticia1.html">Anime</a>
+                <a class="tag" href="noticia4.html">Jogos</a>
+                <a class="tag" href="noticia6.html">Filmes</a>
+            </nav>
+        </div>
+      <div class="topbar-center">
+        <form class="search" onsubmit="searchNews(event); return false;">
+          <input id="q" type="search" placeholder="O Que Procura" />
+          <button aria-label="Pesquisar">🔍</button>
+        </form>
+        <nav class="tags">
+          <a class="tag primary" href="index.html">Início</a>
+          <a class="tag" href="anime.html">Anime</a>
+          <a class="tag" href="jogos.html">Jogos</a>
+          <a class="tag" href="filmes.html">Filmes</a>
+        </nav>
+      </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured">
+            <article class="hero">
+                <div class="hero-text">
+                    <h2>Fale com a equipe do Portal MIGUEL</h2>
+                    <p class="meta">Preencha o formulário abaixo e entraremos em contato.</p>
+                    <p>Use este canal para dúvidas, sugestões ou parcerias.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="contact-form">
+            <form action="#" method="post" onsubmit="alert('Formulário não enviado: exemplo estático.'); return false;">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button class="readmore" type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section class="news-section">
+            <h2>Outros contatos</h2>
+            <p>Telefone: (11) 99454-5567<br/>Email: contato@miguel-portal.com</p>
+        </section>
+
+        <footer class="site-footer">
+            <div>© 2025 MIGUEL - Portal Notícias</div>
+            <div class="notify">Receber notificações 🔔</div>
+        </footer>
+    </main>
+</body>
+</html>

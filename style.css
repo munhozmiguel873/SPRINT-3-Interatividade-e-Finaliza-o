@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+  background: #0f0f12;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #111114;
+  border-bottom: 1px solid #333;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Logo */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.brand {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+.sub {
+  font-size: 0.7rem;
+  color: #888;
+  letter-spacing: 2px;
+}
+
+/* Search */
+.search {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+}
+.search input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #333;
+  background: #1a1a1d;
+  color: #fff;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+.search input:focus {
+  border-color: #00d4ff;
+}
+.search button {
+  background: #00d4ff;
+  color: #000;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  font-size: 1.2rem;
+  transition: background 0.2s;
+}
+.search button:hover {
+  background: #00b7e0;
+}
+
+/* Tags (menu) */
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.tag {
+  padding: 0.4rem 1rem;
+  background: #222;
+  color: #aaa;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.tag:hover {
+  background: #333;
+  color: #fff;
+}
+.tag.primary {
+  background: #00d4ff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Actions (botões direito) */
+.actions {
+  display: flex;
+  gap: 0.8rem;
+}
+.btn.outline {
+  padding: 0.5rem 1rem;
+  border: 1px solid #444;
+  color: #aaa;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.btn.outline:hover {
+  border-color: #00d4ff;
+  color: #00d4ff;
+}
+
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+
+.featured {
+  margin-bottom: 4rem;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: #1a1a1d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero-text h2 {
+  font-size: 2.2rem;
+  color: #00d4ff;
+  line-height: 1.2;
+}
+.hero-text .meta {
+  color: #888;
+  font-size: 0.9rem;
+}
+.readmore {
+  align-self: flex-start;
+  background: #00d4ff;
+  color: #000;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.readmore:hover {
+  background: #00b7e0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00d4ff;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.news-card {
+  background: #1a1a1d;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.15);
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.card-content h3 {
+  font-size: 1.25rem;
+}
+.card-content h3 a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.card-content h3 a:hover {
+  color: #00d4ff;
+}
+.card-meta {
+  color: #888;
+  font-size: 0.85rem;
+}
+.card-link {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto;
+}
+.card-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .topbar-center,
+  .topbar-right {
+    width: 100%;
+  }
+  .tags {
+    justify-content: center;
+  }
+  .actions {
+    justify-content: center;
+  }
+}
+
+/* Dark mode extra suave */
+::selection {
+  background: #00d4ff;
+  color: #000;
+}
